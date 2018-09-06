@@ -1,0 +1,123 @@
+
+@media only screen and (min-width: 96rem) {
+    .ticket {
+    
+        &:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+    }
+    .footer-box__details ul li:not(:last-of-type) {
+        margin-right: 1.5rem;
+    }
+}
+@media only screen and (max-width: 95rem) {
+    html {
+      font-size: 35%;
+    }
+    .header-title {
+        font-size: 62rem;
+    }
+    .ticket {
+        display: block;
+        max-width: 70rem;
+        margin: 0 auto;    
+
+        &:not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+
+        &__heading {
+            font-size: 9rem;
+        }
+    }
+}
+@media only screen and (max-width: 60rem) {
+    html {
+      font-size: 30%;
+    }
+    .section-about__box {
+        min-height: 18rem;
+    }
+    .section-about__text  {
+        font-size: 3.5rem;
+    }
+    .programme-box__text,
+    .ticket {
+        font-size: 3rem;
+        max-width: 50rem;
+    }
+    .contact-form__input,
+    .contact-form__textarea {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 50rem) {
+    html {
+      font-size: 25%;
+    }
+    .section-about__box {
+        min-height: 20rem;
+    }
+    .programme-box {
+        margin-bottom: 8rem;
+    }
+    .button:link {
+        margin: 1rem 0 0 0;
+    }
+    .contact-form {
+        max-width: 65rem;
+    }
+    .footer-box {
+        margin-top: 4rem;
+        &__details {
+            font-size: 2.5rem;
+            li {
+                display: block;
+                margin-right: 0;
+            }
+        }
+        &__copy {
+            font-size: 2rem;
+        }
+
+    }
+}
+@media only screen and (max-width: 30rem) {
+    html {
+      font-size: 20%;
+    }
+    .section-about__box {
+        min-height: 23rem;
+    }
+    .ticket {
+        max-width: 35rem;
+    }
+    .button:link {
+        font-size: 4rem;
+    }
+    .contact-form {
+        max-width: 35rem;
+    }
+}
+@media only screen and (max-width: 20rem) {
+    html {
+      font-size: 15%;
+    }
+    .section-about__box {
+        min-height: 15rem;
+    }
+    .section-about {
+        margin-top: 3rem;
+    }
+    .programme-box {
+        margin-bottom: 4rem;
+    }
+    .contact-form__input,
+    .contact-form__textarea,
+    .contact-form__button {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+}

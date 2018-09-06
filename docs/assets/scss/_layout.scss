@@ -1,0 +1,289 @@
+
+// ---------------   HEADER  ---------------
+.header-title {
+    font-size: 45rem;
+    font-style: italic;
+    font-weight: 900;
+    line-height: .71;
+    letter-spacing: 1rem;
+    word-wrap: break-word;
+    text-align: left;
+    word-spacing: 9000rem; // to break the lines
+    background-image: linear-gradient(to left bottom, #ff14db 40%, #02fda0, #fffc00 90%);
+
+    backface-visibility: hidden;
+
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+// ---------------   ABOUT  ---------------
+
+.section-about {
+    margin-top: 8rem;
+
+    &__box {
+        position: relative;
+        min-height: 20rem;
+    }
+
+    &__text {
+        font-size: 3rem;
+        min-width: 60%;
+        position: absolute;
+        text-align: center;
+        vertical-align: middle;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+}
+// ---------------   PROGRAMME ---------------
+
+.programme-box {
+
+    &__main-title {
+        font-size: 55rem;
+        font-weight: 900;
+        background-image: linear-gradient(to left bottom, #ff14db 31%, #02fda0, #fffc00 76%);
+
+        animation-name: pulsate;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    &__sub-title {
+        font-size: 10rem;
+        text-align: left;
+        word-wrap: break-word;
+        background-image: linear-gradient(to left bottom, #ff14db 30%, #02fda0, #fffc00 90%);
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        max-width: 80%;
+        text-align: left;
+    }
+}
+
+// ---------------   TICKETS ---------------
+
+
+.ticket {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 45rem;
+    border: 2rem solid transparent;
+    border-image: linear-gradient(to left bottom, #ff14db 20%, #02fda0, #fffc00 90%);
+    border-image-slice: 1;
+    font-size: 2rem;
+    padding: 2.5rem;
+    transition: transform .5s ease-in-out;
+    backface-visibility: hidden;
+    
+    // animation-name: glow;
+    // animation-duration: 3s;
+    // animation-iteration-count: infinite;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    &__heading {
+        font-size: 5rem;
+        background-image: linear-gradient(to left bottom, #ff14db 10%, #02fda0, #fffc00 76%);
+    }
+
+    &__details {
+        margin: 2rem 0;
+        padding: 2rem 0;
+        line-height: 1.8;
+        text-align: center;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 20%;
+            bottom: 0;
+            height: 1px;
+            width: 60%;
+            border-bottom: 1px solid #02fda0;
+        }
+        
+        &:after {
+            content: "";
+            position: absolute;
+            left: 20%;
+            top: 0;
+            height: 1px;
+            width: 60%;
+            border-top: 1px solid #02fda0;
+        }
+
+        & > ul {
+            list-style-position: inside;
+        }
+    }
+
+    &__price-box {
+
+        &__price {
+            font-style: italic;
+        }
+        &__value {
+            font-size: 4rem;
+            font-weight: 600;
+            margin: 1rem 0;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to left bottom,  #02fda0, #fffc00 76%);
+        }
+    }
+}
+
+//------------CONTACT FORM -----------------
+
+.contact-form {
+    max-width: 90rem;
+    margin: 0 auto;
+
+    &__input,
+    &__textarea,
+    &__button {
+        font-family: inherit;
+        text-transform: uppercase;
+        border: none;
+    }
+    &__input,
+    &__textarea {
+        display: block;
+        margin-bottom: 5rem;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        min-width: 100%;
+        height: 8rem;
+        background-color: transparent;
+
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to left bottom, #ff14db 20%, #02fda0, #fffc00 90%);
+        border-image-slice: 1;
+
+        &:focus {
+            outline: 0;
+            border-image: linear-gradient(to left bottom,#02fda0 30%, #fffc00, #ff14db 90%);
+        }
+    }
+
+    &__input:first-of-type {
+        color: #ff14db;
+
+        &::placeholder {
+            color: rgba(255, 20, 219, .3);
+        }
+    }
+
+    &__input:last-of-type {
+        color: #02fda0;
+
+        &::placeholder {
+            color: rgba(2, 253, 160, .3);
+        }
+    }
+
+    &__textarea {
+        resize: none;
+        overflow: hidden;
+
+        color: #fffc00;
+        padding-top: 2.5rem; 
+
+        &::placeholder {
+            color: rgba(255, 252, 0, .3);
+        }
+    }
+
+    &__button {
+        outline: 0;
+        display: inline-block;
+        margin: 2rem 0 2rem 0;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+}
+
+//------------FOOTER-----------------
+
+.footer-box {
+    margin-top: 8rem;
+    padding: 3rem 0 3rem 0;
+    background-color: rgba(0, 0, 54, 0.337);
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 600;
+        margin: 1rem 0;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to left bottom,  #02fda0, #fffc00 76%);
+        position: relative;
+        padding-bottom: 1rem;
+            
+        &::after {
+            content: '';
+            left: 35%;
+            bottom: 0;
+            position: absolute;
+            width: 30%;
+            height: 1px;
+            background-image: linear-gradient(to left bottom, #fffc00 40%, #02fda0, #ff14db 90%);
+            opacity: .6;
+        }
+    }
+
+    &__details {
+        margin-top: 1rem;
+        font-size: 2rem;
+        line-height: 1.8;
+        
+        li {
+            display: inline;
+        }
+        a,
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.781);
+        }
+        a:hover {
+            color: #02fda0;
+        }
+        a:active {
+            color: #fffc00;
+        }
+    }
+
+    &__copy {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        margin-top: 1rem;
+        position: relative;
+        padding-top: 1rem;
+        color: rgba(255, 255, 255, 0.781);
+
+        &::after {
+            content: '';
+            left: 25%;
+            top: 0;
+            position: absolute;
+            width: 50%;
+            height: 1px;
+            background-image: linear-gradient(to left bottom, #ff14db 40%, #02fda0, #fffc00 90%);
+            opacity: .6;
+        }
+    }
+}

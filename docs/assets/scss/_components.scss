@@ -1,0 +1,90 @@
+
+h1, h2, h3 { 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+    font-size: 12rem;
+    font-style: italic;
+    background-image: linear-gradient(to left bottom, #ff14db 30%, #02fda0, #fffc00 90%);
+    text-align: center;
+    word-wrap: break-word;
+    margin: 4rem 0;
+    transition: all .7s;
+
+    backface-visibility: hidden;
+
+    &:hover {
+        transform: scale(1.1);
+        text-shadow: 0rem 0rem 3rem  rgba(255, 250, 0, .1);
+    }
+}
+
+.margin-bottom-6 {
+    margin-bottom: 6rem;
+}
+
+// ----------- COLUMNS ---------------
+
+.column-1-of-2 {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 60%;
+    margin-right: 3%;
+}
+.column-2-of-2 {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 40%;
+}
+
+// ----------- BUTTON ---------------
+
+.button,
+.button:link,
+.button:visited {
+
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #00007c;
+    margin: 2rem;
+    display: inline-block; // so that margin would work
+    padding: 2rem 4rem;
+    border-radius: 10rem;
+    background-image: linear-gradient(to right top,  #02fda0, #fffc00 76%);
+    backface-visibility: hidden;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        background-image: linear-gradient(to left bottom,  #02fda0, #fffc00 76%);
+        opacity: 0;
+        z-index: 2;
+        transition: all .2s ease-in;
+    }
+
+    &:hover:after {
+        opacity: 1;
+        box-shadow: -.5rem .5rem 3rem  rgba(255, 250, 0, .2);
+    }
+
+    &:active:after {
+        background-image: none;
+        background-color: #02fda0 ;
+    }
+
+    & > span {
+        position: relative;
+        z-index: 3;
+    }
+}
