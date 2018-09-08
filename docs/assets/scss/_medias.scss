@@ -66,7 +66,7 @@
         margin: 1rem 0 0 0;
     }
     .contact-form {
-        max-width: 65rem;
+        max-width: 55rem;
     }
     .footer-box {
         margin-top: 4rem;
@@ -80,44 +80,20 @@
         &__copy {
             font-size: 2rem;
         }
-
     }
 }
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 40rem) {
     html {
       font-size: 20%;
     }
     .section-about__box {
         min-height: 23rem;
     }
-    .ticket {
+    .ticket,
+    .contact-form  {
         max-width: 35rem;
     }
     .button:link {
         font-size: 4rem;
     }
-    .contact-form {
-        max-width: 35rem;
-    }
-}
-@media only screen and (max-width: 20rem) {
-    html {
-      font-size: 15%;
-    }
-    .section-about__box {
-        min-height: 15rem;
-    }
-    .section-about {
-        margin-top: 3rem;
-    }
-    .programme-box {
-        margin-bottom: 4rem;
-    }
-    .contact-form__input,
-    .contact-form__textarea,
-    .contact-form__button {
-        font-size: 4rem;
-        margin-bottom: 2rem;
-    }
-    
 }

@@ -54,7 +54,7 @@
     }
 
     &__sub-title {
-        font-size: 10rem;
+        font-size: 9rem;
         text-align: left;
         word-wrap: break-word;
         background-image: linear-gradient(to left bottom, #ff14db 30%, #02fda0, #fffc00 90%);
@@ -64,6 +64,7 @@
         font-size: 2.5rem;
         max-width: 80%;
         text-align: left;
+        word-wrap: break-word;
     }
 }
 
@@ -166,44 +167,33 @@
         letter-spacing: 2px;
         min-width: 100%;
         height: 8rem;
+        outline: 0;
         background-color: transparent;
 
-        border-bottom: 1px solid transparent;
-        border-image: linear-gradient(to left bottom, #ff14db 20%, #02fda0, #fffc00 90%);
+        border-bottom: 1px solid;
+        border-image: linear-gradient(to left bottom,#02fda0 30%, #fffc00, #ff14db 90%);
         border-image-slice: 1;
 
         &:focus {
-            outline: 0;
-            border-image: linear-gradient(to left bottom,#02fda0 30%, #fffc00, #ff14db 90%);
+            border-color: #fffc00;
+            border-image: linear-gradient(to left bottom, #ff14db 20%, #02fda0, #fffc00 90%);
         }
     }
 
     &__input:first-of-type {
         color: #ff14db;
-
-        &::placeholder {
-            color: rgba(255, 20, 219, .3);
-        }
     }
 
     &__input:last-of-type {
         color: #02fda0;
 
-        &::placeholder {
-            color: rgba(2, 253, 160, .3);
-        }
     }
 
     &__textarea {
         resize: none;
         overflow: hidden;
-
         color: #fffc00;
         padding-top: 2.5rem; 
-
-        &::placeholder {
-            color: rgba(255, 252, 0, .3);
-        }
     }
 
     &__button {
@@ -212,6 +202,10 @@
         margin: 2rem 0 2rem 0;
         letter-spacing: 2px;
         cursor: pointer;
+    }
+
+    ::placeholder {
+        color: rgba(211, 207, 0, 0.397);
     }
 }
 
